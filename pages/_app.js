@@ -23,8 +23,6 @@ const client = createClient(
 
 export default function App({ Component, pageProps }) {
   return (
-    <WagmiConfig client={client}>
-      <ConnectKitProvider>
         <div  className='h-screen bg-vote-50 pb-12'>
           {/* <Nav /> */}
           <div className='w-11/12 md:w-6/12 h-full mx-auto pt-12'>
@@ -32,7 +30,5 @@ export default function App({ Component, pageProps }) {
           </div>
           {/* <Footer /> */}
         </div>
-      </ConnectKitProvider>
-    </WagmiConfig>
     )
 }
